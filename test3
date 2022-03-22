@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<atring.h>
+int main()
+{
+    printf("Please input a sentence:\n");
+    char w[10];
+    gets(w);
+    strlwr(s);
+    strlwr(w);
+    int wlen=strlen(w),slen=strlen(s),cnt=0;
+    for(int i=0;i<=slen-wlen;i++)
+    {
+        char tempw[wlen+1];
+        tempw[wlen]='\n';
+        for(int j=0;j<wlen;j++) twmpw[j]=s[i+j];
+        if(strcmp(tempw,w)==0) cnt++;
+    }
+    printf("%d",cnt);
+    return 0;
+}
